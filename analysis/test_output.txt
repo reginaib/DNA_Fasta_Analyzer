@@ -1,0 +1,83 @@
+Expected output for test1 is:  
+>test1
+The sequence length is 8
+The GC percentage of the sequence is 100.0 %
+The number of times the substring ATAT occurs in the DNA string is 0
+
+>test1
+The sequence length is 8
+The GC percentage of the sequence is 100.0 %
+The number of times the substring ATAT occurs in the DNA string is 0
+
+Expected output for test2 is: 
+>test2
+The sequence length is 24
+The GC percentage of the sequence is 0.0 %
+The number of times the substring ATAT occurs in the DNA string is 2
+
+>test2
+The sequence length is 24
+The GC percentage of the sequence is 0.0 %
+The number of times the substring ATAT occurs in the DNA string is 2
+
+Expected output for test3 is: 
+>test3
+The sequence length is 24
+The GC percentage of the sequence is 37.5 %
+The number of times the substring ATAT occurs in the DNA string is 1
+
+>test3
+The sequence length is 24
+The GC percentage of the sequence is 37.5 %
+The number of times the substring ATAT occurs in the DNA string is 1
+
+Expected output for test4 is: 
+>test4 
+The sequence length is 8
+The GC percentage of the sequence is 0.0 %
+The number of times the substring ATAT occurs in the DNA string is 2 
+
+>test4
+The sequence length is 8
+The GC percentage of the sequence is 0.0 %
+The number of times the substring ATAT occurs in the DNA string is 2
+
+Expected output for test5 is: 
+ValueError: Wrong sequence
+
+Traceback (most recent call last):
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 50, in <module>
+    header, sequence = read_fasta(sys.argv[1])
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 30, in read_fasta
+    raise ValueError('Wrong sequence')
+ValueError: Wrong sequence
+
+Expected output for test6 is: 
+ValueError: The sequence should not be empty
+
+Traceback (most recent call last):
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 50, in <module>
+    header, sequence = read_fasta(sys.argv[1])
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 19, in read_fasta
+    raise ValueError('The sequence should not be empty')
+ValueError: The sequence should not be empty
+
+Expected output for test7 is: 
+ValueError: Wrong FASTA file: the name should not be empty and should start with '>'
+
+Traceback (most recent call last):
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 50, in <module>
+    header, sequence = read_fasta(sys.argv[1])
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 13, in read_fasta
+    raise ValueError("Wrong FASTA file: the name should not be empty and should start with '>'")
+ValueError: Wrong FASTA file: the name should not be empty and should start with '>'
+
+Expected output for test8 is: 
+ValueError: The FASTA file should contain only one DNA sequence
+
+Traceback (most recent call last):
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 50, in <module>
+    header, sequence = read_fasta(sys.argv[1])
+  File "/vsc-hard-mounts/leuven-data/350/vsc35081/exercise1_r0926499_ReginaIbragimova/exercise1.py", line 21, in read_fasta
+    raise ValueError('The FASTA file should contain only one DNA sequence')
+ValueError: The FASTA file should contain only one DNA sequence

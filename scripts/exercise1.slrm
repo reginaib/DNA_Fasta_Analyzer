@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --account="lp_edu_large_omics" 
+#SBATCH --cluster="wice" 
+#SBATCH -N 1
+#SBATCH -n 1 
+#SBATCH -t 00:04:00 
+#SBATCH -o ./exercise1.out 
+
+
+export PATH=/staging/leuven/stg_00079/teaching/miniconda/envs/large_omics_2023/bin:$PATH
+
+date
+python ./exercise1.py /lustre1/project/stg_00079/teaching/data/keratin.fasta
+date
